@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background: rgb(0, 0, 0);
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%) !important
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+
+.main__header {
+    height: 60px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+.header__logo--my-name {
+    user-select: none;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.header__navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.header__navbar--text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dark {
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%) !important
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transform: scale(1.5);
+}
+
+.lable__dark-mode {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+
+.main__content {
+    height: 500px;
+}
+
+.content--card {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.main__footer {
+    height: 600px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="./src/styles/base.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="main">
+
+        <header class="main__header">
+            <div class="header__logo">
+                <span class="header__logo--my-name">Thanh Duy</span>
+            </div>
+
+            <div class="header__navbar">
+                <span class="header__navbar--text">
+                    <a href="#introduce">Giới thiệu</a>
+                </span>
+
+                <span class="header__navbar--text">
+                    <a href="#skill">Kĩ năng</a>
+                </span>
+
+                <span class="header__navbar--text">
+                    <a href="#contact--me">Liên hệ</a>
+                </span>
+            </div>
+
+            <div class="header__switch--dark-mode">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <div class="ball"></div>
+                </label>
+            </div>
+    </div>
+
+    </header>
+
+    <main class="main__content">
+        <div id="introduce" class="content--card">
+            Introduce
+        </div>
+        <div id="skill" class="content--card">
+            Skill
+        </div>
+        <div id="contact--me" class="content--card">
+            Contact me
+        </div>
+    </main>
+    <footer class="main__footer">
+
+    </footer>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
