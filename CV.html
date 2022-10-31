@@ -12,52 +12,69 @@
 </head>
 
 <body>
-    <div id="main">
+        <div id="main">
 
-        <header class="main__header">
-            <div class="header__logo">
-                <span class="header__logo--my-name">Thanh Duy</span>
-            </div>
+            <header class="main__header" id="myHeader">
+                <div class="sub__main--header">
+                    <div class="header__logo">
+                        <span class="header__logo--my-name">Thanh Duy</span>
+                    </div>
+                    <div class="header__navbar">
+                        <a href="#introduce">
+                            <span class="header__navbar--text">
+                                Introduce
+                            </span>
+                        </a>
+                        <a href="#skill">
+                            <span class="header__navbar--text">
+                                Skill
+                            </span>
+                        </a>
+                        <a href="#contact--me">
+                            <span class="header__navbar--text">
+                                Contact me
+                            </span>
+                        </a>
+                    </div>
+                    <div class="header__switch--dark-mode">
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+            </header>
 
-            <div class="header__navbar">
-                <span class="header__navbar--text">
-                    <a href="#introduce">Giới thiệu</a>
-                </span>
+            <main class="main__content">
 
-                <span class="header__navbar--text">
-                    <a href="#skill">Kĩ năng</a>
-                </span>
+                <div id="introduce" class="content--card">
+                    <div style="width: 80%; margin: 0 auto;">
+                        <div class="content__introduce col-3">
+                            <span class="text-large-size text-primary">Xin chào !!!</span>
+                            <br>
+                            <span class="text-medium-size text-white tl pr">Tôi là Phạm Thanh Duy, lập trình viên chuyên
+                                về fontend !!!</span>
+                        </div>
+                        <div class=" contend__img col-3">
+                            <img class="avatar__img" src="./src/imgs/avatar.jpg" alt="Girl in a jacket">
+                        </div>
+                        <div class="col-3">
+                            col3
+                        </div>
+                    </div>
+                </div>
 
-                <span class="header__navbar--text">
-                    <a href="#contact--me">Liên hệ</a>
-                </span>
-            </div>
+                <div id="skill" class="content--card">
+                    Skill
+                </div>
+                <div id="contact--me" class="content--card">
+                    Contact me
+                </div>
+            </main>
+            <footer class="main__footer">
 
-            <div class="header__switch--dark-mode">
-                <input type="checkbox" class="checkbox" id="chk" />
-                <label class="label" for="chk">
-                    <div class="ball"></div>
-                </label>
-            </div>
-    </div>
-
-    </header>
-
-    <main class="main__content">
-        <div id="introduce" class="content--card">
-            Introduce
+            </footer>
         </div>
-        <div id="skill" class="content--card">
-            Skill
-        </div>
-        <div id="contact--me" class="content--card">
-            Contact me
-        </div>
-    </main>
-    <footer class="main__footer">
-
-    </footer>
-    </div>
     <script type="module" src="main.js"></script>
 </body>
 
