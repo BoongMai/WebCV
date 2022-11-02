@@ -8,7 +8,7 @@
 
 .book {
     height: 15rem;
-    width: 25rem;
+    /* width: 25rem; */
     font-size: 1.4rem;
     text-align: center;
     position: relative;
@@ -24,8 +24,8 @@
 .page__1 {
     border-radius: 42px;
     background: linear-gradient(315deg, #131732, #161b3b);
-    box-shadow: -22px -22px 44px #080a16,
-        22px 22px 44px #222858;
+    box-shadow:  -9px -9px 18px #11121a,
+    9px 9px 18px #434868;
     color: #fff;
     width: 100%;
     height: 100%;
@@ -56,9 +56,10 @@
 
 .page__2 {
     border-radius: 46px;
+    padding: 20px;
     background: linear-gradient(315deg, #26293b, #2d3046);
-    box-shadow:  -22px -22px 44px #11121a,
-                 22px 22px 44px #434868;
+    box-shadow:  -9px -9px 18px #11121a,
+    9px 9px 18px #434868;
     width: 100%;
     height: 100%;
     position: absolute;
