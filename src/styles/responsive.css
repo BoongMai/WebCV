@@ -28,9 +28,10 @@
     .menu__mobile {
         visibility: visible;
     }
+    
     .content--card {
-        margin-bottom: 200px;
-        height: 690px;
+        height: 800px;
+        margin-bottom: 100px;
     }
 
 }
