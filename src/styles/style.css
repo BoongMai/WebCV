@@ -17,6 +17,19 @@ body {
     background-color: #1F2235;
 }
 
+.menu__mobile {
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    height: 80px;
+    width: 100%;
+    background-color: #1F2235;
+}
+
 .sub__main--header {
     width: 80%;
     height: 100%;
@@ -24,13 +37,30 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+}
 
+.sub__main--header-mobile {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .sticky {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.stickyMenu {
+    position: fixed;
+    width: 20%;
+    bottom: 0;
     left: 0;
     right: 0;
     z-index: 999;
@@ -48,6 +78,15 @@ body {
     display: flex;
     align-items: center;
 }
+
+.menu__footer-mobile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 
 .header__navbar a {
     height: 100%;
