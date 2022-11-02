@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
-    background: rgb(0, 0, 0);
+    background: #1F2235;
     background-image: #1F2235;
 }
 
@@ -33,6 +33,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
 }
 
 .header__logo--my-name {
@@ -69,7 +70,7 @@ body {
 }
 
 .dark {
-    background-image: linear-gradient(to right, #868f96 0%, #596164 100%) !important
+    background-color: black;
 }
 
 .checkbox {
@@ -120,15 +121,13 @@ body {
 }
 
 
-.main__content {
-    height: 500px;
-}
+.main__content {}
 
 .content__introduce {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 
 .contend__img {
@@ -144,9 +143,105 @@ body {
 }
 
 .content--card {
+    width: 80%;
+    height: 707px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content--card-sub {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.content_icon-ss {
     width: 100%;
-    height: 500px;
-    background: #1F2235;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn--ss {
+    display: flex;
+    align-items: center;
+}
+
+.icon-ss {
+    color: #fff;
+}
+
+.content_icon-ss .btn--ss {
+    width: 64px;
+    margin: 10px 0;
+    height: 64px;
+    border-radius: 62px;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+    background: linear-gradient(315deg, #1c1f30, #212439);
+    box-shadow: -10px -10px 20px #0c0e15,
+        10px 10px 20px #323655;
+}
+
+.content_icon-ss .btn--ss:hover {
+    width: 260px;
+}
+
+.content_icon-ss .btn--ss:nth-child(1):hover .icon-ss {
+    color: #1a77f2;
+}
+
+.content_icon-ss .btn--ss:nth-child(1):hover span {
+    margin-left: 10px;
+
+    color: #1a77f2;
+}
+
+.content_icon-ss .btn--ss:nth-child(2):hover .icon-ss {
+    color: #fe0572;
+}
+
+.content_icon-ss .btn--ss:nth-child(2):hover span {
+    margin-left: 10px;
+
+    color: #fe0572;
+}
+
+.content_icon-ss .btn--ss:nth-child(3):hover .icon-ss {
+    color: black;
+}
+
+.content_icon-ss .btn--ss:nth-child(3):hover span {
+    margin-left: 10px;
+    color: white;
+}
+
+.introduce--docs {
+    width: 80%;
+}
+
+.introduce--docs-format {}
+
+.skill__items {
+
+    transition: all 0.8s ease-in-out;
+}
+
+.skill__items:hover {
+    height: 100%;
+}
+
+.icon_skill {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contract--me-card {
 }
 
 .main__footer {

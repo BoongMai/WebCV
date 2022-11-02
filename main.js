@@ -25,5 +25,26 @@ window.addEventListener('scroll', () => {
 	  }
 })
 
+ 
+// Show to top 
 
-// Canvas 
+
+let itemScroll1 = document.querySelectorAll('.item1-scroll')
+
+document.addEventListener('DOMContentLoaded', ()=> {
+	itemScroll1.forEach(item => {
+		item.classList.add('active-scroll')
+	})
+})
+
+let itemScroll = document.querySelectorAll('.item-skill-scroll')
+
+document.addEventListener('scroll', () => {
+	itemScroll.forEach(item => {
+		console.log('item.offsetTop:', item.offsetTop);
+		if(item.offsetTop - window.scrollY < 400) {
+			item.classList.add('active-scroll')
+		}
+		// item.classList.add('active-scroll')
+	})
+})

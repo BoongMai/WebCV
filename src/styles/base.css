@@ -9,6 +9,19 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    color: white;
+}
+
+li {
+    text-align: left;
+    color: white;
+}
+
 :root {
     --body-width: 80%;
     --white-color: white;
@@ -39,7 +52,7 @@ html {
 }
 
 .pr {
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 .text-medium-size {
@@ -52,6 +65,10 @@ html {
     font-weight: 600;
 }
 
+.icon-size {
+    font-size: 64px;
+}
+
 .col-2 {
     float: left;
     display: flex;
@@ -62,5 +79,133 @@ html {
     float: left;
     display: flex;
     width: calc(100%/3);
-    height: 500px;
+}
+
+.col-4 {
+    float: left;
+    display: flex;
+    width: calc(100%/4);
+    margin: 0 10px;
+}
+
+.show--down {
+    opacity: 0;
+}
+
+.show--left {
+    opacity: 0;
+}
+
+.show--up-hard {
+    opacity: 0;
+}
+
+
+
+.active-scroll .show--down {
+    animation: showtop 0.7s ease-in-out 1 forwards;
+}
+
+.active-scroll .show--left {
+    animation: showleft 0.8s ease-in-out 1 forwards;
+}
+
+.active-scroll .show--right {
+    animation: showRight 0.8s ease-in-out 1 forwards;
+}
+
+.active-scroll .show--up {
+    animation: showup 0.8s ease-in-out 1 forwards;
+}
+
+.active-scroll .show--up-hard {
+    animation: showUpHard 0.8s ease-in-out 1 forwards;
+}
+
+
+@keyframes showtop {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        left: 10;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes showleft {
+    from {
+        opacity: 0;
+        transform: translate(-50%);
+    }
+    to {
+        opacity: 1;
+        left: 10;
+        transform: translate(0%);
+    }
+}
+@keyframes showRight {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        left: 10;
+        transform: translate(0%);
+    }
+}
+
+@keyframes showup {
+    from {
+        opacity: 0;
+        transform: translateY(50%)
+    }
+    to {
+        opacity: 1;
+        left: 10;
+        transform: translateY(0%)
+
+    }
+}
+
+@keyframes showUpHard {
+    from {
+        opacity: 0;
+        transform: translateY(90%)
+    }
+    to {
+        opacity: 1;
+        left: 10;
+        transform: translateY(0%)
+
+    }
+}
+
+
+
+.delay-01 {
+    animation-delay: 0.1S !important;
+}
+
+.delay-02 {
+    animation-delay: 0.2S !important;
+}
+
+.delay-03 {
+    animation-delay: 0.3S !important;
+}
+
+.delay-04 {
+    animation-delay: 0.4S !important;
+}
+
+.delay-06 {
+    animation-delay: 0.6S !important;
+}
+
+.delay-08 {
+    animation-delay: 0.8S !important;
 }
