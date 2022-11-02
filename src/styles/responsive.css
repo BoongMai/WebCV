@@ -28,13 +28,17 @@
     .menu__mobile {
         visibility: visible;
     }
-    
+
     .content--card {
         height: 800px;
         margin-bottom: 100px;
     }
 
     .item-skill-scroll {
+        display: none;
+    }
+
+    .contend__img {
         display: none;
     }
 
@@ -71,7 +75,7 @@
     .menu__mobile {
         visibility: visible;
     }
-    
+
     .content--card {
         height: 800px;
         margin-bottom: 100px;
@@ -80,6 +84,7 @@
     .item-skill-scroll {
         display: none;
     }
+
 }
 
 /* pc */
