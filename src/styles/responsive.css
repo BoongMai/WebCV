@@ -43,7 +43,44 @@
 
 /* Tablet */
 
-@media (min-width: 740px) and (max-width:1023px) {}
+@media (min-width: 740px) and (max-width:1023px) {
+    .header__navbar {
+        display: none;
+    }
+
+    .content--card-sub {
+        display: block;
+    }
+
+    .col-3 {
+        width: 100%;
+    }
+
+    .container-card {
+        margin-top: 20px;
+    }
+
+    .content__introduce {
+        margin-bottom: 20px;
+    }
+
+    .contend__img {
+        margin-bottom: 20px;
+    }
+
+    .menu__mobile {
+        visibility: visible;
+    }
+    
+    .content--card {
+        height: 800px;
+        margin-bottom: 100px;
+    }
+
+    .item-skill-scroll {
+        display: none;
+    }
+}
 
 /* pc */
 
