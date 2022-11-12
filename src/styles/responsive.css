@@ -3,6 +3,10 @@
 @media (max-width:740px) {
 
 
+    .isShow-btn {
+        width: 260px !important;
+    }
+
     .header__navbar {
         display: none;
     }
@@ -41,7 +45,7 @@
     }
 
     .item-skill-scroll {
-        display: none;
+        /* display: none; */
     }
 
     .contend__img {
@@ -54,7 +58,7 @@
 /* Tablet */
 
 @media (min-width: 740px) and (max-width:1023px) {
-    .main__content{
+    .main__content {
         top: 200px;
     }
 

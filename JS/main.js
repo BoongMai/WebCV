@@ -7,6 +7,7 @@ const myHeader = document.getElementById('myHeader')
 const sticky = myHeader.offsetTop
 
 const btnClick = document.querySelector('.content_icon-ss')
+const contentClick = document.getElementById('skill')
 
 
 const handleShowInfo = (e, i) => {
@@ -15,6 +16,10 @@ const handleShowInfo = (e, i) => {
     btnClick.children[i].classList.toggle("isShow-btn")
 }
 
+const handleShowContent = (e,i) => {
+    console.log(contentClick.children[i]);
+    contentClick.children[i].classList.toggle('isShow_card')
+}
 
 
 console.log("sticky: " ,sticky);

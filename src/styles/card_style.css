@@ -74,6 +74,12 @@
     box-shadow: 1.5rem 2rem 3rem rgba(0, 0, 0, 0.25);
 }
 
+.isShow_card .page__1{
+    transform: rotateX(260deg);
+    opacity: 0;
+    box-shadow: 1.5rem 2rem 3rem rgba(0, 0, 0, 0.25);
+}
+
 .page:hover .page__1::after {
     opacity: 0;
 }
