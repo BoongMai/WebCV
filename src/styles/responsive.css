@@ -1,12 +1,18 @@
 /* Mobile */
 
 @media (max-width:740px) {
+
+
     .header__navbar {
         display: none;
     }
 
     .content--card-sub {
         display: block;
+    }
+
+    .content__introduce {
+        margin-bottom: 50px !important;
     }
 
     .col-3 {
@@ -48,6 +54,11 @@
 /* Tablet */
 
 @media (min-width: 740px) and (max-width:1023px) {
+    .main__content{
+        top: 200px;
+    }
+
+
     .header__navbar {
         display: none;
     }

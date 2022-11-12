@@ -48,45 +48,50 @@
         </header>
 
         <main class="main__content">
-
             <div id="introduce" class="content--card">
                 <div class="content--card-sub">
                     <div class="item1-scroll content__introduce col-3">
                         <span class="show--down delay-02 text-large-size text-primary">Xin chào !!!</span>
                         <br>
-                        <span class="show--left delay-02 text-medium-size text-white tl pr">Con cẹt nè Đức :)))))</span>
+                        <span class="show--left delay-02 text-medium-size text-white tl pr">Tui dev đủ thứ về frontend !!!</span>
                     </div>
                     <div class="item1-scroll contend__img col-3">
                         <img class="show--up delay-02 avatar__img" src="./src/imgs/avatar.jpg" alt="Girl in a jacket">
                     </div>
                     <div class="delay-02 col-3">
                         <div class="item1-scroll content_icon-ss">
-                            <div class="show--right delay-01 btn--ss">
+                            <div onclick="handleShowInfo(event, 0)" class="show--right delay-01 btn--ss">
                                 <div class="icon-ss">
                                     <i class='bx bxl-facebook-circle icon-size'></i>
                                 </div>
-                                <span><a href="https://www.facebook.com/Thanh.Dy1082000/">Thanh.Dy1082000</a></span>
+                                <span>
+                                    <a href="https://www.facebook.com/Thanh.Dy1082000/">Thanh.Dy1082000</a>
+                                </span>
                             </div>
-                            <div class="show--right delay-02 btn--ss">
+                            <div  onclick="handleShowInfo(event, 1)" class="show--right delay-02 btn--ss">
                                 <div class="icon-ss">
                                     <i class='bx bxl-instagram icon-size'></i>
                                 </div>
-                                <span><a href="https://www.instagram.com/_boongmai/">_boongmai</a></span>
+                                <span>
+                                    <a href="https://www.instagram.com/_boongmai/">_boongmai</a>
+                                </span>
                             </div>
-                            <div class="show--right delay-03 btn--ss">
+                            <div  onclick="handleShowInfo(event, 2)" class="show--right delay-03 btn--ss">
                                 <div class="icon-ss">
                                     <i class='bx bxl-github icon-size'></i>
                                 </div>
-                                <span><a href="https://github.com/BoongMai">BoongMai</a></span>
+                                <span>
+                                    <a href="https://github.com/BoongMai">BoongMai</a>
+                                </span>
                             </div>
                         </div>
                     </div>
-
                 </div>
            
             </div>
 
             <div id="skill" class="content--card item-skill-scroll">
+
                 <div class="col-3 container-card book">
                     <div class="col-4 skill__items show--up-hard delay-01 page">
                         <div class="icon_skill page__1">
@@ -162,8 +167,11 @@
             <!-- <div id="contact--me" class="content--card contract--me-card" style="font-size: 100px;color: white; opacity: 0.4;">
             </div> -->
         </main>
-        <!-- <footer class="main__footer">
-        </footer> -->
+      
+     <!-- <div style="position:relative">
+         
+            <canvas id="canvas"></canvas>
+     </div> -->
         <!-- <div class="menu__mobile" id="myMenu">
             <div class="sub__main--header-mobile">
                 <div class="menu__footer-mobile">
@@ -186,6 +194,9 @@
             </div>
         </div> -->
     </div>
+    <footer class="main__footer">
+        <span class="text__footer text-large-size center">Phạm Thanh Duy</span>
+    </footer> 
     <script src="./JS/main.js"></script>
 </body>
 
